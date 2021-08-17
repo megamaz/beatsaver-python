@@ -1,8 +1,8 @@
 # Python BeatSaver API
-This is the python API for communicating with BeatSaver.\
-Installation:\
+This is the unofficial python API for communicating with BeatSaver.\
+Installation:
 ```
-python -m pip install ??????
+python -m pip install BeatSaverPython
 ```
 
 # Samples
