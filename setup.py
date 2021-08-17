@@ -6,8 +6,8 @@ here = pathlib.Path(__file__).parents[0]
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
-    name="BeatSaverPython",
-    version="1.0.0",
+    name="beatsaver",
+    version="1.0.1",
     license='MIT license',
     description="An Unofficial Python Beat Saver API Library.",
     long_description=long_description,
