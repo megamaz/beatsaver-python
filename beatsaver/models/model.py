@@ -167,6 +167,7 @@ class MapVersion(BeatSaverModel):
         self['diffs'] = [MapDifficulty(**x) for x in data['diffs']]
 
     coverURL:str
+    previewURL:str
     createdAt:Instant
     diffs:List[MapDifficulty]
 
@@ -179,6 +180,7 @@ class MapDetail(BeatSaverModel):
                 continue
             self[x] = data[x]
         self['stats'] = MapStats(**data['stats'])
+        self['metadata'] = MapDetailMetadata(**data['metadata'])
         if type(data['uploaded']) != str:
             self['uploaded'] = Instant(**data['uploaded']) # GOD FFS
         self['uploader'] = UserDetail(**data['uploader'])
