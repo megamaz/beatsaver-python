@@ -17,11 +17,12 @@ setup(
     author_email="raphael.mazuel@gmail.com",
     classifiers = [
         'Development Status :: 4 - Beta',
-        'Programming Language :: Python :: 3.12.0'
+        'Programming Language :: Python :: 3.12'
     ],
     packages=find_packages(),
     python_requires='>=3.12, <4',
     project_urls={
         'Bug Reports': 'https://github.com/megamaz/beatsaver-python/issues'
-    }
+    },
+    install_requires=(here / 'requirements.txt').read_text(encoding='utf-8').split("\n")
 )
