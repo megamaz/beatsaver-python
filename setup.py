@@ -7,7 +7,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name="beatsaver",
-    version="1.0.1",
+    version="1.1.0",
     license='MIT license',
     description="An Unofficial Python Beat Saver API Library.",
     long_description=long_description,
@@ -17,11 +17,10 @@ setup(
     author_email="raphael.mazuel@gmail.com",
     classifiers = [
         'Development Status :: 4 - Beta',
-        # 'Programming Language :: Python :: 3.8'
-        'Programming Language :: Python :: 3.9'
+        'Programming Language :: Python :: 3.12.0'
     ],
     packages=find_packages(),
-    python_requires='>=3.8, <4',
+    python_requires='>=3.12, <4',
     project_urls={
         'Bug Reports': 'https://github.com/megamaz/beatsaver-python/issues'
     }

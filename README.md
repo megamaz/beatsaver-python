@@ -2,7 +2,7 @@
 This is the unofficial python API for communicating with BeatSaver.\
 Installation:
 ```
-python -m pip install BeatSaverPython
+python -m pip install beatsaver
 ```
 
 # Samples
@@ -14,10 +14,13 @@ python -m pip install BeatSaverPython
 'DM DOKURO - Reality Check Through The Skull'
 >>> hardestmap.uploader.name
 'rickput'
->>> # maps that don't exist return None
->>> doesnotexist = bs.maps.get_map_from_id('z')
->>> doesnotexist is None
-True
+>>> # maps that don't exist raise BeatSaverNotFoundException
+>>> try:
+...     doesnotexist = bs.maps.get_map_from_id('z')
+... except bs.models.exceptions.BeatSaverNotFoundException:
+...     print("oops")
+...
+oops
 ```
 ### Bonus
 ```py
